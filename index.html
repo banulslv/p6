@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        }
+        img{
+            width: 100%;
+        }
+        :root{
+            --color-primary:#6200E9;
+            --color-secundary:#7C4DFF;
+            --color-bg:#B388FE;
+            --color-black:#5D41A7;
+
+        }
+        
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            display: flex;
+            flex-grow: 1;
+            flex-basis: 22%;
+            flex-direction: column;
+            border: solid 0.3em var(#7C4DFF);
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card:first-child img{
+            object-position: top;
+        }
+        
+        .card_img{
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card_txt{
+            display: flex;
+            flex-direction: column ;
+            padding: 2em 0 0 0;
+            background-color: #B388FE;
+            justify-content: firts baseline;
+            font-family: 'Roboto', sans-serif;
+        }
+        .card_txt h1{
+            font-size: 1em;
+            padding: 0 0 0.5em;
+            flex-grow: 1;
+            color: var(--color-primary);
+            letter-spacing: 0,25em;
+            font-variant: small-caps;
+            
+        }
+        .card_txt h2{
+            font-size: 1,8em;
+            flex-grow: 1;
+            color: var(--color-secundary);
+            font-weight: 700;
+            font-variant: small-caps;
+            background-color: rgb(255, 255, 255);
+        }
+        .card_txt p{
+            padding: 1em 0 0 0;
+            font-weight: 100;
+            font-size: 1,25em;
+        }
+
+    </style>
+  </head>
+<body>
+    <main>
+       <div class="gallery">
+           <div class="card">
+               <figure class="card_img">
+                   <img src="img/main-image.jfif" alt="">
+               </figure>
+               <header class="card_txt">
+                   <h1>William Stanley Haseltine</h1>
+                   <h2>Santa Maria della Salute, Sunset 1870-85 </h2>
+                   <p>On view at The Met Fifth Avenue in Gallery 774 </p>
+               </header>
+           </div>
+        <div class="card">
+            <figure class="card_img">
+                <img src="img/vija celmis.jpg" alt="">
+            </figure>
+            <header class="card_txt">
+                <h1>Vija Celmins</h1>
+                <h2>To Fix the Image in Memory</h2>
+                <p>Throughout an accomplished career that spans more than 50 years, 
+                    Vija Celmins (American, b. 1938) has sustained a practice of deep focus and extraordinary 
+                    skill in a wide range of media. </p>
+            </header>
+        </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/main-image.jfif" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>William Stanley Haseltine</h1>
+                    <h2>Santa Maria della Salute, Sunset 1870-85 </h2>
+                    <p>On view at The Met Fifth Avenue in Gallery 774 </p>
+                </header>
+            </div>
+         <div class="card">
+             <figure class="card_img">
+                 <img src="img/vija celmis.jpg" alt="">
+             </figure>
+             <header class="card_txt">
+                 <h1>Vija Celmins</h1>
+                 <h2>To Fix the Image in Memory</h2>
+                 <p>Throughout an accomplished career that spans more than 50 years, 
+                     Vija Celmins (American, b. 1938) has sustained a practice of deep focus and extraordinary skill in a wide range of media. </p>
+             </header>
+         </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/main-image.jfif" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>William Stanley Haseltine</h1>
+                    <h2>Santa Maria della Salute, Sunset 1870-85 </h2>
+                    <p>On view at The Met Fifth Avenue in Gallery 774 </p>
+                </header>
+            </div>
+         <div class="card">
+             <figure class="card_img">
+                 <img src="img/vija celmis.jpg" alt="">
+             </figure>
+             <header class="card_txt">
+                 <h1>Vija Celmins</h1>
+                 <h2>To Fix the Image in Memory</h2>
+                 <p>Throughout an accomplished career that spans more than 50 years, 
+                     Vija Celmins (American, b. 1938) has sustained a practice of deep focus and extraordinary skill in a wide range of media. </p>
+             </header>
+         </div>
+    </div>   
+    </main>
+</body>
+</html>
